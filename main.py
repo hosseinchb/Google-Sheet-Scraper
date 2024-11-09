@@ -24,7 +24,7 @@ spreadsheet = client.open("Accbox Spotify Accounts")  # Replace with your spread
 def main():
     while True:
         check_expired_accounts()  # Your function to check and alert on expired accounts
-        time.sleep(30)  # Wait for 1 hour (3600 seconds)
+        time.sleep(3600)  # Wait for 1 hour (3600 seconds)
 def check_expired_accounts():
     # Loop through each worksheet in the spreadsheet
     for worksheet in spreadsheet.worksheets():
